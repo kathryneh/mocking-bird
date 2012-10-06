@@ -1,0 +1,24 @@
+@import url(chrome://global/skin/);
+
+#EncryptPrefs radio[pane] {
+	list-style-image: url("chrome://browser/skin/preferences/Options.png");
+}
+
+#EncryptPrefs radio[pane="EncryptPrefPaneMain"] {
+	-moz-image-region: rect(0px, 32px, 32px, 0px);
+}
+#EncryptPrefs radio[pane="EncryptPrefPaneAdvanced"] {
+	-moz-image-region: rect(0px, 224px, 32px, 192px);
+}
+#EncryptPrefs radio[pane="EncryptPrefPaneGUI"] {
+	-moz-image-region: rect(0px, 64px, 32px, 32px);
+}
+
+#highlightColorPicker {
+	margin-right:5px;
+}
+
+#keyboardShortcut {
+	min-width:200px;
+	font-family:monospace;
+}

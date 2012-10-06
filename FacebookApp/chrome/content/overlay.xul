@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://FacebookApp/chrome/skin/" type="text/css"?>
+<overlay id="Scrapper-Overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/javascript">
+    var prefManager = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+</script>
+<script type="application/x-javascript" src="chrome://FacebookApp/content/jquery-1.7.2.min.js" />
+<script type="application/x-javascript" src="chrome://FacebookApp/content/main.js" />
+</overlay>

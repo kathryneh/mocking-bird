@@ -1,0 +1,47 @@
+<html>
+        <head>
+                <title>UNC Hack - tic tac toe</title>
+                <link rel="stylesheet" type="text/css" href="lyric.css" /> 
+                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+                <script type="text/javascript">
+                    $('#lyric_form').live('submit', function(event){
+                        event.preventDefault();
+                        var song_url = URLencode($.trim($('#lyrics').val()));
+                        $('.song').text("Loading...");
+                        $.ajax({
+                           url : 'http://www.lyrics.net/lyrics/'+song_url,
+                           type: 'GET',
+                            data: {},
+                            timeout: 2000, // in milliseconds
+                            success: function(data,textStatus,jqXHR) {
+                                //Song returned
+                                var song_html = $(data);
+                                var song_table = song_html.find('.ent');
+                                $('.song').text(song_table.find('<tr>').find('a').html());
+                            },
+                            error: function(jqXHR,textStatus,errorThrown) {
+                                //Website doesn't exist
+                                alert('error');
+                                console.log(jqXHR);
+                            }
+                        });
+                    });
+                    
+                    //** URL encode a string
+                    function URLencode(sStr){
+                        return escape(sStr).replace(/\+/g, '%2C').replace(/\"/g,'%22').replace(/\'/g, '%27').replace(/\//g, '%2F').replace(/\./g, '%2E');
+                    }
+                </script>
+        </head>
+        <body>
+            <center>
+                <form id="lyric_form">
+                    <input type="text" id="lyrics" name="lyrics" class="lyric_input">
+                    <button class="publish">Publish</button>
+                </form>
+                <br>
+                <br>
+                <div class="song"></div>
+            </center>
+        </body>
+</html>

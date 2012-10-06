@@ -1,0 +1,6 @@
+#EncryptPrefs radio[pane="EncryptPrefPaneAdvanced"] {
+	-moz-image-region: rect(0px, 160px, 32px, 128px);
+}
+#EncryptPrefs radio[pane="EnryptPrefPaneGUI"] {
+	-moz-image-region: rect(0px, 192px, 32px, 160px);
+}

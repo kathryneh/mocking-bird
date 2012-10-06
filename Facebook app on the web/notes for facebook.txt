@@ -1,0 +1,15 @@
+graph.facebook.com/id/blah
+example:
+graph.facebook.com/pt/checkins
+
+
+
+lyrics.net/lyrics/unicode of the search input
+
+returns results directly echoed into the page.
+
+So look for table of class ent and find the row with the most <b> elements- this is the song that has the best match.  Then look in the second span of the row and find the first <a> tag, this contains the song title.  The second a tag contains the author.
+
+Plug these into youtube search bar and take the first video that's not a promotional video- plug that invisibly as an iframe on the page.
+
+Do a ranking scheme to pick the song.  For each <b> tag a song contains it gets +1, we then look at how close the song is to the top, and it gets -1 for its distance from the top.  The song with the most points is the most relevant.

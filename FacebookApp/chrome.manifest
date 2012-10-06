@@ -1,0 +1,3 @@
+content FacebookApp                 chrome/content/ contentaccessible=yes
+skin	FacebookApp classic/1.0 	chrome/skin/
+overlay chrome://browser/content/browser.xul chrome://FacebookApp/content/overlay.xul

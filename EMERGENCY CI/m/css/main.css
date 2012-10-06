@@ -1,0 +1,301 @@
+header{
+    background-image:url('../img/header_bg.png');
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    text-align: center;
+    min-width: 900px;
+}
+body{
+    background-image: url('../img/body_bg.png');
+    font-family: Arial;
+}
+.sidebar_icon{
+    background-image:url('../img/align_just_icon&24.png');
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: .7;
+    position: absolute;
+    top: 18px;
+    left: 23px;
+}
+.sidebar_icon:hover{
+    opacity: 1;
+}
+.sidebar_wrapper{
+    position: fixed;
+    left: -300px;
+    top: 60px;
+    width: 300px;
+    height: 100%;
+    box-shadow: 8px -5px 4px -2px rgba(0, 0, 0, 0.3);
+    background-color: #FFFFFF;
+    margin-bottom: 60px;
+    text-align: left;
+}
+.Nav_head{
+    font: 26px bold Arial;
+    color: #3B5998;
+    padding: 10px;
+}
+.Nav_options div{
+    cursor: pointer;
+    font: 17px normal Arial;
+    color: #333333;
+    height: 30px;
+    background-color: #DBDBDB;
+    border-top: 1px dashed #AAAAAA;
+    line-height: 30px;
+    padding: 10px;
+}
+#nav_shopping{
+    border-bottom: 1px dashed #AAAAAA;
+}
+.Nav_options div:hover{
+    color: #3B5998;
+}
+.user_name{
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #8BC7EB;
+}
+.page_location{
+    color: #F9F9F9;
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    top: 20px;
+    cursor: default;
+}
+.wrapper{
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    min-height: 100%;
+}
+.search_box{
+    position: fixed;
+    top: 60px;
+    width: 400px;
+    height: auto;
+    border-bottom-left-radius: 4pt;
+    border-bottom-right-radius: 4pt;
+    background-color: #FFFFFF;
+    box-shadow: 0pt 5px 4px -2px rgba(0, 0, 0, 0.3);
+    z-index: 50;
+}
+.search_box_content{
+    height: auto;
+    width: inherit;
+    margin: 20px 0px 0px 20px;
+    color: #3A3A3A;
+    font-size: 20px;
+}
+.search_box_content input{
+    background-color: #F8F8F8;
+    border: 1px solid #959595; 
+    width: 60px;
+    font-size: 16px;
+    color: #959595;
+    height: 30px;
+    padding-left: 10px;
+    line-height: 16px;
+    -moz-box-shadow: inset 0 0 5px #888888;
+    -webkit-box-shadow: inset 0 0 5px #888888;
+    box-shadow: inset 0 0 5px #888888;
+}
+.search_box_content label{
+    cursor: pointer;
+}
+.search_box_footer{
+    height: 20px;
+    width: inherit;
+    cursor: pointer;
+    border-top: 1px dashed #AAAAAA;
+    padding-top: 2px;
+}
+.search_box_footer hr{
+    width: 25px;
+    margin-top: 5px;
+}
+.search_criteria{
+    text-align: right;
+}
+.search_input{
+    text-align: left;
+    padding-left: 5px;
+}
+.course_num_compare{
+    text-align: left;
+    width: 160px;
+    position: absolute;
+    font-size: 16px;
+    margin-top: 10px;
+    right: -10px;
+    top: 60px;
+}
+.course_num_compare input{
+    height: auto;
+    width: 20px;
+}
+.search_btn{
+    outline: none;
+    background-image: none;
+    background-color: #5b87bb;
+    border: 1px solid #2b478b;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 5px;
+    font-size: 14px;
+    width: 350px;
+    border-radius: 4pt;
+    box-shadow: 0pt 5px 4px -2px rgba(0, 0, 0, 0.3);
+}
+.search_more{
+    background-color: #FFFFFF;
+    cursor: pointer;
+    width: 380px;
+    margin-top: 5px;
+    margin-left: -20px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.search_more:hover{
+    background-color: #FFF9D7;
+}
+.search_results{
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 0px;
+    height: auto;
+    width: 300px;
+    background-color: #FFFFFF;
+    padding: 10px 0px;
+    border-radius: 4pt;
+    box-shadow: 0px 5px 4px -2px rgba(0, 0, 0, 0.3);
+    border: 1px solid #AAAAAA;
+    z-index: 200;
+}
+.search_results_title{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px dashed #C5C5C5;
+}
+.course_table_block{
+    border-bottom: 1px dashed #C5C5C5;
+    padding: 5px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.course_table_block:hover{
+    background-color: #FFF9D7;
+}
+.class_schedule{
+    position: absolute;
+    top: 400px;
+    width: auto;
+    min-height: 600px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 4pt;
+    box-shadow: 0px 5px 4px -2px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #AAAAAA;
+}
+.time_row{
+    height: 2px;
+    background-color: #AAAAAA;
+}
+.time_slot{
+    background-color: #EEEEEE;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    border-right: 1px solid #AAAAAA;
+    border-left: 1px solid #AAAAAA;
+    min-height: 40px;
+    min-width: 80px;
+    line-height: 40px;
+    color: #5b87bb;
+    cursor: default;
+}
+.time_slot:hover{
+    background-color:#FFF9D7;
+}
+.day_slot{
+    border-left: 0px;
+}
+.hour_block_wrapper{
+    width: 102px;
+    border-bottom: 2px solid #AAAAAA;
+}
+.hour_block{
+    width: inherit;
+    border-right: 1px solid #AAAAAA;
+}
+.fifteen_min{
+    height: 15px;
+}
+.fifteen_bar{
+    border-top: 1px dotted #888888;
+}
+.classBlock{
+    position: absolute;
+    width: 150px;
+    background-color: #5b87bb;
+    border: 1px solid #2b478b;
+    box-shadow: 0pt 5px 4px -2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.classBlockExpand{
+    position: absolute;
+    bottom: 0px;
+    margin-left: 65px;
+}
+.classBlockExpandImg{
+    height: 15px;
+    vertical-align: bottom;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.classInfoPopup{
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    overflow-y: visible;
+    background-color: #FFFFFF;
+    display: none;
+    opacity: 1;
+    z-index: 100;
+}
+.classInfoPopup_border{
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #777777;
+    opacity: 0.8;
+    border-radius: 4pt;
+}
+.classInfoPopup_content{
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.class_time{
+    font-size: 12px;
+}
